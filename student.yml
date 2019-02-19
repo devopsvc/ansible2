@@ -1,0 +1,18 @@
+---
+- studentdetails: 
+  - name:  harin
+    pno: 894654
+    course: devops
+    address: kphb
+       
+  - name:  jani
+    pno: 531321
+    course: devops
+    address: kphb
+  
+  
+  - name:  ram
+    pno: 8796531
+    course: aws
+    address: kphb
+  
