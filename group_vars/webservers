@@ -3,3 +3,4 @@ mywebserveronUbuntu : apache2
 mywebserveronredhat : httpd
 myjavaonubuntu : openjdk-6-jre
 myjavaonredhat : java-1.6.0-openjdk
+comname : maha
