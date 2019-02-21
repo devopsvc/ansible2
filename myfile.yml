@@ -1,5 +1,5 @@
 ---
   - name: crate a file
     file: 
-    path: /home/maha/maha.txt
-    state: touch
+     path: /home/maha/maha.txt
+     state: touch
