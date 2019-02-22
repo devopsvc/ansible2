@@ -31,3 +31,4 @@
     url: https://s3.amazonaws.com/maha4iac/mahaLogin.war
     dest: /var/lib/tomcat7/webapps/mahaLogin.war
     force_basic_auth: yes
+  notify: restarttom
