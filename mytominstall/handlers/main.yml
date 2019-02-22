@@ -1,2 +1,7 @@
 ---
 # handlers file for mytominstall
+- name: restarttom
+  service:
+    name: tomcat7
+    state: restarted
+    

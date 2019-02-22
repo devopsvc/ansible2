@@ -1,2 +1,27 @@
 ---
 # tasks file for mytominstall
+- name:  install tomcat7
+  apt: 
+    name: tomcat7
+    state: present 
+  
+- name:  copy the config file form server into all nodes
+  template:
+    src:  templates/tomconfig.j2
+    dest: /etc/default/tomcat7
+  notify: restarttom
+
+- name: Installing Additional Packages
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+   - tomcat7-docs
+   - tomcat7-admin
+   - tomcat7-examples
+
+- name: copy tomuser file into all nodes 
+  template:
+    src: templates/tomuser.j2
+    dest: /etc/tomcat7/tomcat-users.xml
+  notify: restarttom
